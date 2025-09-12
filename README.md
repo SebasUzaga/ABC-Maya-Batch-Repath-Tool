@@ -25,4 +25,4 @@ Instead of reconnecting them manually, this tool provides a simple UI to batch-r
 
 ## Usage
 1. Run UI launcher file `Launch_Batch_Alembic_Repath_tool.bat`
-2. Tool runs trought bash
+2. Tool runs through bash
