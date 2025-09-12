@@ -59,7 +59,7 @@ class Launcher(QtWidgets.QWidget):
         super().__init__()
         self.setWindowTitle("Batch Alembic Repath – Launcher")
         self.resize(820, 600)
-        self.proc = None | None
+        self.proc = None
 
        
         icon_file = APP_DIR / "icon.png"
@@ -269,4 +269,5 @@ if __name__ == "__main__":
     w = Launcher()
     w.show()
     sys.exit(app.exec())
+
 
