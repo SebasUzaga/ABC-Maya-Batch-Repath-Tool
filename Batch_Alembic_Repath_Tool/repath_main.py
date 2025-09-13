@@ -9,7 +9,6 @@ from collections import defaultdict
 from datetime import datetime
 import argparse   
 
-# === Parse CLI Arguments ===
 parser = argparse.ArgumentParser(description="Batch Alembic repath tool")
 parser.add_argument("--scenes", required=True, help="Folder with Maya scenes (.ma/.mb)")
 parser.add_argument("--new", required=True, dest="new_alembics", help="Folder with new Alembic caches")
@@ -21,7 +20,6 @@ SCENE_FOLDER = args.scenes
 NEW_ABC_PATH = args.new_alembics.replace("\\", "/").rstrip("/")
 OVERWRITE = args.overwrite
 
-# Dictionary: { scene_path: [(node, new_path) }
 UPDATED_NODES = defaultdict(list)
 
 if args.report:
@@ -122,3 +120,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
